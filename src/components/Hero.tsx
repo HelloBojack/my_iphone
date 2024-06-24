@@ -28,7 +28,7 @@ const Hero = () => {
           className='font-semibold text-3xl text-gray-100 opacity-0 text-center my-[2rem] md:mt-0'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.5, delay: 1 }}
+          transition={{ type: "spring", duration: 1.5, delay: 1 }}
           exit={{ opacity: 0 }}
         >
           iPhone 15 Pro
@@ -49,14 +49,14 @@ const Hero = () => {
             className='bg-blue w-[70px] h-[45px] rounded-full'
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 1 }}
+            transition={{ type: "spring", duration: 1.5, delay: 1 }}
             exit={{ opacity: 0 }}
           >Buy</motion.button>
           <motion.p
             className='mt-[2rem] text-[22px]'
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 1.5 }}
+            transition={{ type: "spring", duration: 1.5, delay: 1.5 }}
             exit={{ opacity: 0 }}
           >From $999 or $41.62/mo. for 24 mo.1</motion.p>
         </div>
