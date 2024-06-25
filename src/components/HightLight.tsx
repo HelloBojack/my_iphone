@@ -12,8 +12,8 @@ const HightLight = () => {
   }, [isInView])
 
   return (
-    <section className='bg-zinc'>
-      <div className="pt-[5rem] px-[4rem] flex justify-between items-center">
+    <section className='bg-zinc py-[2rem]'>
+      <div className="pt-[2rem] px-[4rem] flex justify-between items-center">
         <motion.h1
           ref={ref}
           className="text-[56px] font-bold text-gray mb-[1rem]"
