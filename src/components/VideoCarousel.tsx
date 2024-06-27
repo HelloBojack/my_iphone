@@ -80,7 +80,7 @@ function VideoCarousel() {
   const handleDotClick = (index) => {
     videoRef.current[videoIndex].pause()
     setVideoInfo(pre => ({ ...pre, videoIndex: index, isPlaying: true, isEnd: false }))
-    animate(videoWrapperRef.current, { x: `${-(index * 100)}%` }, { duration: 1, delay: index === 1 ? 2 : 0 })
+    animate(videoWrapperRef.current, { x: `${-(index * 100)}%` }, { duration: 1 })
     videoRef.current[index].play()
   }
 
