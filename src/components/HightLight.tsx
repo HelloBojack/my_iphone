@@ -7,10 +7,6 @@ const HightLight = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-  useEffect(() => {
-    console.log("Element is in view: ", isInView)
-  }, [isInView])
-
   return (
     <section className='bg-zinc py-[2rem]'>
       <div className="pt-[2rem] px-[4rem] flex justify-between items-center">
